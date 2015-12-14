@@ -1,0 +1,634 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+	<title>Patterns</title>
+    <script type="text/javascript">
+		function toggleDiv(divId) {
+		   $("#"+divId).toggle();
+		}
+	</script>
+    <style>
+        h2.fill{
+            padding: 0.25em 0.5em;
+            margin: 3em 0 1em;
+            background-color: #444;
+            color: #fff;
+        }
+        .palette-wrapper ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            width: 100%!important;
+            -webkit-column-count: 3;
+            -moz-column-count: 3;
+            column-count: 3;
+            -webkit-column-gap: 2em;
+            -moz-column-gap: 2em;
+            column-gap: 2em;
+        }
+        .palette-wrapper ul li{
+            margin-bottom: 50px;
+            display: inline-block;
+        }
+        .palette{
+            width: 100px;
+            height: 100px;
+            float: left;
+            margin-right: 20px;
+        }
+        .mainColour{
+            background-color: #1a428a;
+        }
+        .darkColour{
+            background-color: #062256;
+        }
+        .lightColour{
+            background-color: #4267aa;
+        }
+        .linkColour{
+            background-color: #33589b;
+        }
+        .hoverColour{
+            background-color: #c70151;
+        }
+        .navColour{
+            background-color: #eee;
+        }
+        .activenavColour{
+            background-color: #ddd;
+        }
+        .quoteColour{
+            background-color: #959393;
+        }
+        .divideColour{
+            background-color: #e2e3df;
+        }
+        .footerColour{
+            background-color: #444;
+        }
+        .highlightColour{
+            background-color: #0D8175;
+        }
+        .secondaryhighlightColour{
+            background-color: #e0ebff;
+        }
+        
+    </style>
+</head>
+<body>
+	<header class="cd-main-header">
+        <a class="cd-logo" href="http://www.qmul.ac.uk"><img src="http://www.qmul.ac.uk/assets2012/images/logo.png" alt="Queen Mary University of London" /></a>
+        <ul class="cd-header-buttons">
+            <li><a class="cd-search-trigger" href="#cd-search">Search<span></span></a></li>
+            <li><a class="cd-nav-trigger" href="#cd-primary-nav">Menu<span></span></a></li>
+        </ul>
+	</header>
+    
+    <section class="pageHeader">
+        <header>
+            <h1><a href="#">Components</a></h1>
+        </header>
+    </section>
+    
+    <section class="hero-image">
+        <img src="http://test-web.qmul.ac.uk/mei/images/parliment2a.jpg" alt="kitten" />
+    </section>
+
+	<main class="cd-main-content">
+		<div class="contentElement">
+            <div class="content">
+                
+                <h2 class="fill">Grid</h2>
+                <div class="row">
+                    <div class="twelve columns fill">1</div>
+                </div>
+                
+                <div class="row">
+                    <div class="one-third column fill">1/3</div>
+                    <div class="one-third column fill">1/3</div>
+                    <div class="one-third column fill">1/3</div>
+                </div>
+                
+                <div class="row">
+                    <div class="one-half column fill">1/2</div>
+                    <div class="one-half column fill">1/2</div>
+                </div>
+                
+                <div class="row">
+                    <div class="one-third column fill">1/3</div>
+                    <div class="two-thirds column fill">2/3</div>
+                </div>
+                
+                <div class="row">
+                    <div class="two-thirds column fill">2/3</div>
+                    <div class="one-third column fill">1/3</div>
+                </div>
+                
+                <div class="row">
+                    <div class="three columns fill">1/4</div>
+                    <div class="three columns fill">1/4</div>
+                    <div class="three columns fill">1/4</div>
+                    <div class="three columns fill">1/4</div>
+                </div>
+                
+                <div class="row">
+                    <div class="one-half column fill">1/2</div>
+                    <div class="three columns fill">1/4</div>
+                    <div class="three columns fill">1/4</div>
+                </div>
+                
+                <div class="row">
+                    <div class="three columns fill">1/4</div>
+                    <div class="three columns fill">1/4</div>
+                    <div class="one-half column fill">1/2</div>
+                </div>
+                
+                <h2 class="fill">Typography</h2>
+                <h1>Heading 1</h1>
+                <h2>Heading 2</h2>
+                <h3>Heading 3</h3>
+                <h4>Heading 4</h4>
+                <div class="intro">
+                    <p>Intro para - Queen Mary attracts some of the brightest minds from across the country and the world and recent successes in several important league tables confirm our place among the global elite.</p>
+                </div>
+                <p>Regular para- The Research Excellence Framework (REF) is the system for assessing the quality of research in UK higher education institutions. Universities submit their work across 36 panels of assessment. Research is judged according to quality of output (65 per cent), environment (15 per cent) and, for the first time, the impact of research (20 per cent).</p>
+                <blockquote>
+                    <p>We have a distinctive approach towards education. We believe that the best preparation for the business manager of the future is a keen understanding of the wider context of business, as well as a sound grounding in business practice.</p>
+                    <footer>
+                        <cite><a href="#">Joe Bloggs, Blah Blah Blah</a></cite>
+                    </footer>
+                </blockquote>
+                
+                <blockquote class="pullquote">
+                    <p>We have confirmed our place in the <em>top 10%</em> of universities in the latest <em>world rankings</em>.</p>
+                </blockquote>
+                
+                <div class="highlight">
+                    <h2>Heading in highlight box</h2>
+                    <p>Highlight para...</p>
+                    <p><a href="#" class="button">Standard button (highlight)</a></p>
+                </div>
+                
+                <h2 class="fill">Buttons</h2>
+                <p><a href="#" class="button">Standard button</a></p>
+                <p><a href="#" class="button full-width">Full width button</a></p>
+                <p><a href="#" class="button-secondary">Secondary button</a></p>
+                <p><a href="#" class="button-secondary full-width">Full width secondary button</a></p>
+                
+                <h2 class="fill">Forms</h2>
+                <form action="#" id="register-form" method="post" enctype="application/x-www-form-urlencoded">
+                    <label for="full_name">Name:</label> 
+                    <input id="full_name" name="full_name" type="text" />
+                    <label for="email">Email:</label> 
+                    <input id="email" name="email" type="text" />
+                    <label for="enquiry_type">Enquiry type:</label> 
+                    <select class="form-select required" id="enquiry_type" name="enquiry_type">
+                        <option value="">Please select...</option>
+                        <option value="General enquiry">General enquiry</option>
+                        <option value="Admission enquiry">Admission enquiry</option>
+                        <option value="Course enquiry">Course enquiry</option>
+                        <option value="School enquiry">School enquiry</option>
+                    </select>
+                    <label for="message">Message:</label> 
+                    <textarea id="message" name="message" type="text"></textarea>
+                    <input class="button" id="submit" type="submit" value="Submit" />
+                </form>
+                
+                <h2 class="fill">Lists</h2>
+                <div class="row">
+                    <ul>
+                        <li>Unordered list item</li>
+                        <li>Unordered list item
+                            <ul>
+                                <li>Unordered list sub-item</li>
+                                <li>Unordered list sub-item</li>
+                            </ul>
+                        </li>
+                        <li>Unordered list item</li>
+                        <li>Unordered list item</li>
+                        <li>Unordered list item</li>
+                    </ul>
+                    <ol>
+                        <li>Ordered list item</li>
+                        <li>Ordered list item</li>
+                        <li>Ordered list item
+                            <ul>
+                                <li>Ordered list sub-item</li>
+                                <li>Unordered list sub-item</li>
+                            </ul>
+                        </li>
+                        <li>Ordered list item</li>
+                        <li>Ordered list item</li>
+                    </ol>
+                </div>
+                <h2 class="fill">Tables</h2>
+                <table class="full-width">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>Sex</th>
+                            <th>Location</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Dave Gamache</td>
+                            <td>26</td>
+                            <td>Male</td>
+                            <td>San Francisco</td>
+                        </tr>
+                        <tr>
+                            <td>Dwayne Johnson</td>
+                            <td>42</td>
+                            <td>Male</td>
+                            <td>Hayward</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h2 class="fill">Images</h2>
+                <figure>
+                    <img src="images/test2.jpg" alt="kitten" />
+                    <figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</figcaption>
+                </figure>
+                <figure class="full-width">
+                    <img src="http://www.qmul.ac.uk/assets2013/images/shoutbox/students-round-a-laptop-shoutbox.jpg" alt="EECS" />
+                </figure>
+                
+                <h2 class="fill">Videos</h2>
+                <div class="contentVideo">
+                    <div class="video-container">
+                        <iframe allowfullscreen="allowfullscreen" height="540" src="//www.youtube.com/embed/BMjLGLX5FTM?rel=0" title="A day in the life of Queen Mary" width="960">Your browser does not support iframes.</iframe>
+                    </div>
+                </div>
+                
+                <h2 class="fill">Student profiles</h2>
+                <article class="student-profile">
+                    <figure>
+                        <img src="http://www.sbcs.qmul.ac.uk/images/undergraduate/152220.png" alt="Student profile name" />
+                    </figure>
+                    <header>
+                        <h1>Tasqeen Ahmed</h1>
+                    </header>
+                    <p><a href="#">Biochemistry</a></p>
+                    <p>"When applying to universities, I made sure that Queen Mary was my first choice. One of the major factors that attracted me to QMUL was its Russell Group status. This was crucially important as it meant that I would be taught by leading academics who are involved in groundbreaking research."</p>
+                    <p><a href="#" class="button-secondary">More information</a></p>
+                </article>
+                
+                <h2 class="fill">Tabs</h2>
+                <ul class="tabNavigation full-width">
+                    <li><a href="#first">Overview</a></li>
+                    <li><a href="#second">Structure</a></li>
+                    <li><a href="#third">Entry requirements</a></li>
+                    <li><a href="#fourth">Learning and teaching</a></li>
+                    <li><a href="#fifth">Fees and funding</a></li>
+                </ul>
+                <div class="tabs">
+                    <div id="first">
+                        <p>Tab 1 content</p>
+                    </div>
+                    <div id="second">
+                        <p>Tab 2 content</p>
+                    </div>
+                    <div id="third">
+                        <p>Tab 3 content</p>
+                    </div>
+                    <div id="fourth">
+                        <p>Tab 4 content</p>
+                    </div>
+                    <div id="fifth">
+                        <p>Tab 5 content</p>
+                    </div>
+                </div>
+                
+                <h2 class="fill">Accordion</h2>
+                <div id="accordion">
+                    <h3>Drawer 1</h3>
+                    <div>
+                        <p>Accordion 1 content..</p>
+                    </div>
+                    <h3>Drawer 2</h3>
+                    <div>
+                        <p>Accordion 2 content..</p>
+                    </div>
+                    <h3>Drawer 3</h3>
+                    <div>
+                        <p>Accordion 3 content..</p>
+                    </div>
+                </div>
+                
+                <h2 class="fill">Datatables</h2>
+                <table cellpadding='0' cellspacing='0' border='0' class='display' id='example'>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Position</th>
+                            <th class='hideColumn'>Expertise</th>
+                            <th>DoL/CCLS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class='dots wideColumn'><a href="http://www.law.qmul.ac.uk/staff/alldridge.html" class="titlelink">Alldridge, Peter</a></td>
+                            <td class='dots hideColumn'>Professor</td>
+							<td class='hideColumn'>Criminal law, Disability law, Evidence, Information Technology, Jurisprudence and legal theory, Legal education</td>
+							<td>DoL</td>
+                        </tr>
+                        <tr>
+                            <td class='dots wideColumn'><a href="http://www.law.qmul.ac.uk/staff/allen.html" class="titlelink">Allen, Stephen</a></td>
+                            <td class='dots hideColumn'>Senior Lecturer</td>
+							<td class='hideColumn'>International Law, Legal Theory, Cyber-Law</td>
+                            <td>DoL</td>
+                        </tr>
+                        <tr>
+                            <td class='dots wideColumn'><a href="http://www.law.qmul.ac.uk/staff/amos.html" class="titlelink">Amos, Merris</a></td>
+                            <td class='dots hideColumn'>Reader</td>
+							<td class='hideColumn'>Human rights and civil liberties, Public law</td>
+                            <td>DoL</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h2 class="fill">Where next</h2>
+                <section class="whereNext">
+                    <header>
+                        <h1>Where next?</h1>
+                    </header>
+                    <ul>
+                        <li><a href="#">Research showcase 2015</a></li>
+                        <li><a href="#">Research impact</a></li>
+                        <li><a href="#">Research highlights</a></li>
+                    </ul>
+                </section>
+                
+                <h2 class="fill">Colour palette</h2>
+                <div class="palette-wrapper">
+                    <ul>
+                        <li><div class="palette mainColour"></div> Main blue - #1a428a</li>
+                        <li><div class="palette darkColour"></div> Dark blue - #062256</li>
+                        <li><div class="palette lightColour"></div> Light blue - #4267aa</li>
+                        <li><div class="palette linkColour"></div> Links - #33589b</li>
+                        <li><div class="palette hoverColour"></div> Hover - #c70151</li>
+                        <li><div class="palette navColour"></div> Nav/Where next - #eeeeee</li>
+                        <li><div class="palette activenavColour"></div> Active nav - #dddddd</li>
+                        <li><div class="palette quoteColour"></div> Blockquote - #959393</li>
+                        <li><div class="palette divideColour"></div> Dividing lines - #e2e3df</li>
+                        <li><div class="palette footerColour"></div> Footer - #444444</li>
+                        <li><div class="palette highlightColour"></div> Highlight - #0D8175</li>
+                        <li><div class="palette secondaryhighlightColour"></div> Secondary Highlight - #e0ebff</li>
+                    </ul>
+                </div>
+                
+                <div class="rtt">
+                    <a class="scroll" href="#top"><img alt="Return to top" src="http://www.qmul.ac.uk/assets2013/images/top.png"></a>
+                </div>
+            </div>
+        </div>
+	</main>
+
+	<div class="cd-overlay"></div>
+    
+	<nav class="cd-nav">
+		<ul id="cd-primary-nav" class="cd-primary-nav is-fixed">
+            
+            <li class="has-children">
+				<a href="content.html">Study</a>
+				<ul class="cd-secondary-nav three-column-list is-hidden">
+                    <li class="go-back"><a href="#0">Previous</a></li>
+					<li class="see-all"><a href="content.html">Study subjects</a></li>
+                    <li><a href="content.html">Astronomy and astrophysics</a></li>
+                    <li><a href="content.html">Biological and biomedical sciences</a></li>
+                    <li><a href="content.html">Business and management</a></li>
+                    <li><a href="content.html">Chemical sciences</a></li>
+                    <li><a href="content.html">Comparative literature</a></li>
+                    <li><a href="content.html">Computer science</a></li>
+                    <li><a href="content.html">Dentistry</a></li>
+                    <li><a href="content.html">Design</a></li>
+                    <li><a href="content.html">Drama</a></li>
+                    <li><a href="content.html">Economics and finance</a></li>
+                    <li><a href="content.html">Electronic engineering, telecommunications, music and audio systems</a></li>
+                    <li><a href="content.html">Engineering</a></li>
+                    <li><a href="content.html">English</a></li>
+                    <li><a href="content.html">Film studies</a></li>
+                    <li><a href="content.html">Geography and environmental science</a></li>
+                    <li><a href="content.html">Global health</a></li>
+                    <li><a href="content.html">History</a></li>
+                    <li><a href="content.html">Information technology management for business</a></li>
+                    <li><a href="content.html">Languages and cultures</a></li>
+                    <li><a href="content.html">Law</a></li>
+                    <li><a href="content.html">Linguistics</a></li>
+                    <li><a href="content.html">Materials science and engineering</a></li>
+                    <li><a href="content.html">Mathematical sciences</a></li>
+                    <li><a href="content.html">Medicine</a></li>
+                    <li><a href="content.html">Multimedia and arts technology</a></li>
+                    <li><a href="content.html">Physics</a></li>
+                    <li><a href="content.html">Politics and international relations</a></li>
+                    <li><a href="content.html">Psychology and neuroscience</a></li>
+                    <li><a href="content.html">Statistics</a></li>
+				</ul>
+			</li>
+            
+            <li class="has-children">
+				<a href="content.html">Research</a>
+				<ul class="cd-secondary-nav three-column-list is-hidden">
+                    <li class="go-back"><a href="#0">Previous</a></li>
+					<li class="see-all"><a href="content.html">Research subjects</a></li>
+                    <li><a href="content.html">Astronomy and astrophysics</a></li>
+                    <li><a href="content.html">Biological and biomedical sciences</a></li>
+                    <li><a href="content.html">Business and management</a></li>
+                    <li><a href="content.html">Chemical sciences</a></li>
+                    <li><a href="content.html">Comparative literature</a></li>
+                    <li><a href="content.html">Computer science</a></li>
+                    <li><a href="content.html">Dentistry</a></li>
+                    <li><a href="content.html">Design</a></li>
+                    <li><a href="content.html">Drama</a></li>
+                    <li><a href="content.html">Economics and finance</a></li>
+                    <li><a href="content.html">Electronic engineering, telecommunications, music and audio systems</a></li>
+                    <li><a href="content.html">Engineering</a></li>
+                    <li><a href="content.html">English</a></li>
+                    <li><a href="content.html">Film studies</a></li>
+                    <li><a href="content.html">Geography and environmental science</a></li>
+                    <li><a href="content.html">Global health</a></li>
+                    <li><a href="content.html">History</a></li>
+                    <li><a href="content.html">Information technology management for business</a></li>
+                    <li><a href="content.html">Languages and cultures</a></li>
+                    <li><a href="content.html">Law</a></li>
+                    <li><a href="content.html">Linguistics</a></li>
+                    <li><a href="content.html">Materials science and engineering</a></li>
+                    <li><a href="content.html">Mathematical sciences</a></li>
+                    <li><a href="content.html">Medicine</a></li>
+                    <li><a href="content.html">Multimedia and arts technology</a></li>
+                    <li><a href="content.html">Physics</a></li>
+                    <li><a href="content.html">Politics and international relations</a></li>
+                    <li><a href="content.html">Psychology and neuroscience</a></li>
+                    <li><a href="content.html">Statistics</a></li>
+				</ul>
+			</li>
+            
+            <li class="has-children">
+				<a href="content.html">Why choose us?</a>
+				<ul class="cd-secondary-nav oneColumn is-hidden">
+                    <li class="go-back"><a href="#0">Previous</a></li>
+					<li class="see-all"><a href="content.html">Reasons to choose us</a></li>
+                    <div class="navPromo">
+                        <a href="#"><img alt="Students by the canal" src="http://www.qmul.ac.uk/images/undergrad/64206.jpg"></a>
+                        <p><a href="#">Join us at our open day</a><br />26 and 27 June</p>
+                    </div>
+                    <li><a href="content.html">Rankings and reputation</a></li>
+                    <li><a href="content.html">Research excellence</a></li>
+                    <li><a href="content.html">International focus</a></li>
+                    <li><a href="content.html">Career success</a></li>
+                    <li><a href="content.html">Student life</a></li>
+                    <li><a href="content.html">Support and funding</a></li>
+                    <li><a href="content.html">Our campus</a></li>
+                    <li><a href="content.html">London location</a></li>
+				</ul>
+			</li>
+		</ul> <!-- primary-nav -->
+	</nav> <!-- cd-nav -->
+
+	<div id="cd-search" class="cd-search">
+		<form>
+			<input type="search" placeholder="Search...">
+		</form>
+	</div>
+    
+    <div class="footerWrapper">
+        
+        <div class="socialWrapper">
+            <header>
+                <h1>Connect with QMUL on social media</h1>
+            </header>
+            
+            <ul>
+                <li><a class="t" href="http://twitter.com/QMUL/"><img src="images/icons/64-twitter.png" alt="Twitter icon" /></a></li>
+                <li><a class="fb" href="http://www.facebook.com/QMLnews/"><img src="images/icons/64-facebook.png" alt="Facebook icon" /></a></li>
+                <li><a class="yt" href="#"><img src="images/icons/64-youtube.png" alt="YouTube icon" /></a></li>
+                <li><a class="f" href="#"><img src="images/icons/64-flickr.png" alt="Flickr icon" /></a></li>
+                <li><a class="i" href="#"><img src="images/icons/64-instagram.png" alt="Soundcloud icon" /></a></li>
+                <li><a class="li last" href="#"><img src="images/icons/64-linkedin.png" alt="Linkedin icon" /></a></li>
+            </ul>
+        </div>
+        
+        <div class="fa-footer">
+            <div class="row">
+                <div class="one-third column noPad">
+                    <h3>Footer heading</h3>
+                    <ul>
+                        <li><a href="#">Alumni</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Healthcare services</a></li>
+                        <li><a href="#">How to find us</a></li>
+                    </ul>
+                    <h3>Footer heading</h3>
+                    <ul>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">MyQMUL</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Another footer link</a></li>
+                    </ul>
+                </div>
+                <div class="one-third column noPad">
+                    <h3>Footer heading</h3>
+                    <ul>
+                        <li><a href="#">Non-academic services</a></li>
+                        <li><a href="#">Research centres</a></li>
+                        <li><a href="#">Schools and Institutes</a></li>
+                        <li><a href="#">Staff Intranet</a></li>
+                        <li><a href="#">Another footer link</a></li>
+                        <li><a href="#">Another footer link</a></li>
+                        <li><a href="#">Another footer link</a></li>
+                        <li><a href="#">Another footer link</a></li>
+                    </ul>
+                </div>
+                <div class="one-third column noPad last">
+                    <h3>Footer heading</h3>
+                    <ul>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">MyQMUL</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Another footer link</a></li>
+                    </ul>
+                    <h3>Footer heading</h3>
+                    <ul>
+                        <li><a href="#">Alumni</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Healthcare services</a></li>
+                        <li><a href="#">How to find us</a></li>
+                        <li><a href="#">Another footer link</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <div class="footerLinks">
+				<ul>
+					<li><a href="#">Contact</a></li>
+                    <li><a href="http://www.qmul.ac.uk/site/sitemap/" title="Detailed site map">Site Map</a></li>
+					<li><a href="http://www.qmul.ac.uk/site/privacy/" title="Privacy and data protection statement">Privacy and cookies</a></li>
+					<li><a href="http://www.qmul.ac.uk/site/disclaimer/" title="Disclaimer">Disclaimer</a></li>
+					<li class="last"><a href="http://www.qmul.ac.uk/site/accessibility/" title="Disability and accessibility statement">Accessibility</a></li>
+				</ul>
+                <p>&copy; Queen Mary University of London, Mile End Road, London, E1 4NS, Tel: +44 (0)20 7882 5555</p>
+			</div>
+		</footer>
+	</div>
+    
+<script src="js/jquery-2.1.1.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="js/jquery.mobile.custom.min.js"></script>
+<script src="//cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+<script>
+    $(function() {
+        $( "#accordion" ).accordion({
+            collapsible: true,
+            heightStyle: "content"
+        });
+    });
+</script>
+<script type="text/javascript">
+    $(function () {
+        var tabContainers = $('div.tabs > div');
+        var hash = window.location.hash;
+        if (!hash || hash == '#') {    hash = '#first'; }
+        $(document).ready(function () {
+                tabContainers.hide();
+                tabContainers.filter(hash).show();
+                $('ul.tabNavigation a').removeClass('selected');
+                $('ul.tabNavigation a[href="' + hash + '"]').addClass('selected');
+                window.scrollTo(0,0);
+                return false;
+        });
+    });
+</script>
+<script type="text/javascript">
+    $(function () {
+        var tabContainers = $('div.tabs > div');
+        $('ul.tabNavigation a').click(function () {
+            tabContainers.hide();
+            tabContainers.filter(this.hash).show();
+            $('ul.tabNavigation a').removeClass('selected');
+            $(this).addClass('selected');
+            return false;
+        });
+    });
+</script>
+<script type="text/javascript"> 
+    $(document).ready(function() {
+        $('#example').dataTable( {
+            "pagingType": "full_numbers"
+        } );
+    } );
+</script>
+</body>
+</html>
